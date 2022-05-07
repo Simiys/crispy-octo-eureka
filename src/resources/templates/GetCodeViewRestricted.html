@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Code</title>
+
+    <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+<span id="load_date" th:text="${date}"></span>
+<br>
+<pre  id="code_snippet"  ><code th:text="${code}"></code></pre>
+<br>
+Allowed views:
+<span id="views_restriction" th:text="${views}"></span>
+<br>
+
+</body>
+</html>
